@@ -1,21 +1,10 @@
 import styled from 'styled-components'
-import { Form, ErrorMessage } from 'formik';
 
-
-
-export const StyledError = styled(ErrorMessage)`
-    color: red !important;
-`
-
-export const StyledForm = styled(Form)`
+export const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 20%;
-    border: 1px solid #0059ff;
-    border-radius:10px;
-    padding: 10px;
-    width: 250px;
 
     label{
         display: flex;
@@ -48,12 +37,4 @@ export const StyledForm = styled(Form)`
     input:focus{
         border: 1px solid #0059ff
     }
-`;
-
-
-
-
-
-
-
-
+`

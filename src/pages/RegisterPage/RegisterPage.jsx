@@ -1,12 +1,13 @@
 import React from 'react'
 import { RegisterForm } from 'components/RegisterForm/RegisterForm'
+import { StyledPage } from './RegisterPage.styled'
 
 const RegisterPage = () => {
   return (
-    <div>
+    <StyledPage>
       <h1>REGISTER PAGE</h1>
       <RegisterForm />
-    </div>
+    </StyledPage>
   )
 }
 

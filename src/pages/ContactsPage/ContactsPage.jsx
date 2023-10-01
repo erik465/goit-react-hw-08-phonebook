@@ -8,6 +8,8 @@ import { ContactsList } from 'components/ContactsList/ContactsList';
 import { getIsLoading, getError } from 'redux/contacts/selector';
 import { fetchContacts } from 'redux/contacts/operations';
 
+import { StyledPage } from './ContactsPage.styled';
+
 const ContactsPage = () => {
 
   const dispatch = useDispatch();
@@ -19,14 +21,13 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <div>
-        <h1>Phonebook</h1>
+    <StyledPage>
         <AddContact />
         <h2>Contacts</h2>
         {isLoading && !error && <b>Request in progress...</b>}
         <ContactFilter />
         <ContactsList />
-      </div>
+      </StyledPage>
   )
 }
 

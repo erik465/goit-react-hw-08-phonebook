@@ -13,5 +13,15 @@ export const StyledList = styled.ul`
 
     li button{
         height: 20px;
+        background-color: #0059ff;
+        color: #eee;
+        border:  none;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        outline: none;
     }
 `

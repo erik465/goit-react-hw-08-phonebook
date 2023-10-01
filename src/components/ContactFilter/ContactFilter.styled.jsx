@@ -6,7 +6,20 @@ export const StyledFilter = styled.div`
     gap: 10px;
     align-items: center;
 
+    p{
+        font-size:15px;
+        font-weight: bold;
+    }
+
     input{
-        height: 20px;
+        outline : none;
+        color: #111;
+        border : 1px solid #656161;
+        border-radius:10px;
+        padding: 5px;
+    }
+
+    input:focus{
+        border: 1px solid #0059ff
     }
 `

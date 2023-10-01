@@ -19,11 +19,12 @@ export const ContactsList = () =>{
         <StyledList > 
             {
             Array.isArray(visibleContacts) ? visibleContacts.map(contact =>{
-                return( 
+                return(
+
                 <li key={contact.id}>
                     <p>{contact.name} : {contact.number}</p>
                     <button onClick={() => dispatch(deleteContact(contact.id))}>Delete</button>
-                </li> 
+                </li>
                 )
             }): null}
         </StyledList>

@@ -40,6 +40,8 @@ export const AddContact = () =>{
 
 
     return(
+      <>
+        <h2>Add Contact</h2>
         <Formik
         initialValues={{
           name: '',
@@ -72,5 +74,6 @@ export const AddContact = () =>{
           <button type="submit">Add contact</button>
         </StyledForm>
       </Formik>
+      </>
     )
 }
