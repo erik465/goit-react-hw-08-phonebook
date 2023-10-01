@@ -1,12 +1,21 @@
-import React from 'react'
+import { useDispatch } from 'react-redux';
+import { logOut } from 'redux/auth/operations';
+import { useAuth } from 'hooks';
 
 const UserMenu = () => {
-  return (
-    <div>
-        <p>mango@mail.com</p>
-        <button>Logout</button>
-    </div>
-  )
-}
+  const dispatch = useDispatch();
+  const { user } = useAuth();
 
-export default UserMenu
+  return (
+    <div >
+      <p >Welcome, {user.name}</p>
+      <button type="button" onClick={() => dispatch(logOut())}>
+        Logout
+      </button>
+    </div>
+  );
+};
+
+export default UserMenu;
+
+
